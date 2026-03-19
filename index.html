@@ -1,79 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tharun Kumar Reddy | Java Full Stack Developer</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divya Reddy Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #1f1c2c, #928dab);
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+section {
+  padding: 40px;
+  animation: slideUp 1.5s ease;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 15px 0;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.skills span {
+  display: inline-block;
+  background: #ff7eb3;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+</style>
 </head>
 <body>
 
 <header>
-    <nav class="navbar">
-        <h2 class="logo">Tharun Kumar Reddy</h2>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <h1>Divya Reddy</h1>
+  <p>Java Full Stack Developer</p>
 </header>
 
-<section id="home" class="section home">
-    <h1>Hello, I'm <span>Tharun Kumar Reddy</span></h1>
-    <p>Java Full Stack Developer | Freelancer</p>
-    <a href="#contact" class="btn">Hire Me</a>
+<section>
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am a passionate Java Full Stack Developer skilled in building responsive web applications using Java, Spring Boot, HTML, CSS, and JavaScript.</p>
+  </div>
 </section>
 
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I am a passionate Java Full Stack Developer skilled in building scalable web applications using modern technologies.</p>
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Java</span>
+    <span>Spring Boot</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>SQL</span>
+  </div>
 </section>
 
-<section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <div>Java</div>
-        <div>Spring Boot</div>
-        <div>Hibernate</div>
-        <div>MySQL</div>
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>JavaScript</div>
-        <div>React</div>
-    </div>
+<section>
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>Facial Expression Recognition</h3>
+    <p>Built a CNN-based model to detect emotions with 90% accuracy.</p>
+  </div>
+  <div class="card">
+    <h3>E-Commerce Website</h3>
+    <p>Developed a full-stack web app using Java and MySQL.</p>
+  </div>
 </section>
 
-<section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects">
-        <div class="project-card">
-            <h3>Job Booking App</h3>
-            <p>On-demand service booking web app with admin dashboard.</p>
-        </div>
-        <div class="project-card">
-            <h3>Bug Fixing System</h3>
-            <p>System to track and resolve software bugs efficiently.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-    </form>
+<section>
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: your-email@example.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+  </div>
 </section>
 
 <footer>
-    <p>© 2026 Tarun | All Rights Reserved</p>
+  <p>© 2026 Divya Reddy</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
